@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Уханов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2578985).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Сайт: [Мой проект Седона](https://famous-prog.github.io/2578985-sedona-2/).
 
 ---
 
