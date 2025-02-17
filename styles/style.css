@@ -12,7 +12,41 @@ body {
     line-height: 21px;
     background-color: #F2F2F2;
     
+}
+.grids {
+    display: flex;
+    flex-wrap: wrap;
     
+}
+.advantages-big-item {
+    width: 100%;
+    display: flex;
+    
+    
+}
+.block2 {
+   display: flex;
+   flex-direction: column;
+   background-color: #82B3D3;
+}
+.advantages-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33.33%;
+}
+.comfort1 {
+    display: flex;
+
+}
+.social-list {
+    display: flex;
+    align-items: flex-start;
+    
+}
+.tell {
+    display: flex;
+    align-items: center;
 }
 nav {
     
@@ -35,8 +69,7 @@ nav {
     display: flex;
    
 }
-.heading {
-}
+
 .welcome_3 {
     position: absolute;
     top: 100px;
@@ -70,6 +103,7 @@ nav {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    padding: 20px 16px;
 
 }
 
@@ -102,32 +136,17 @@ nav {
 }
 .city {
     display: flex;
-    background-color: #82B3D3;
-    width: 90%;
+   
     
 }
 .review {
     display: flex;
-    padding: 50px;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 2px solid #FFFFFF4D;
+    
    
-    
-    
-    
+   
 }
-.review1 {
-    position: absolute;
-    padding-top: 60px;
-}
-.city img {
-    position: relative;
-    left: 120px;
-    order: 1;
-}
+
+
 .attractions {
     display: flex;
 }
@@ -181,3 +200,19 @@ nav {
     text-decoration: none;
 }
 
+.categorii {
+    display: flex;
+}
+.mainn {
+    display: flex;
+}
+.list-item-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.list-end {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
