@@ -6,8 +6,8 @@
     <linK href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <header>
-    <a href="#"><img src="img/logo_header.svg" alt="Логотип Седона" width="138px" height="64px"></a>
+  <header class="header-main">
+    <a href="#"><img class="logotip" src="img/logo_header.svg" alt="Логотип Седона" width="138px" height="64px"></a>
     <nav>
       <ul class="header">
         <li><a class="link link_main" href="#">Главная</a></li>
@@ -21,54 +21,71 @@
       </ul>
     </nav>
   </header>
-  <body>
+  <body  class="header-main">
     <div class="heading">
-    <img src="img/main_picture.jpg" alt="Горы" width="1200" height="485">
+    <img class="main_header_logo" src="img/main_picture.jpg" alt="Горы" width="1200" height="485">
+    <img class="welcome" src="img/vector_main.png" alt="Добро пожаловать">
+    <img class="welcome_2" src="img/vector_podwe.svg" alt="Великолепно">
+    <img class="welcome_3" src="img/vector.svg" alt="Приветствие">
       </div>
-      <h2 class="main_2">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-      <p class="paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     <section>
-      <div class="city">
-      <img src="img/city.jpg" alt="Красивый город в саду" width="800" height="385">
-      <ul>
-        <li class="review">НАСТОЯЩИЙ <br>ГОРОДОК
-          <p>Седона - не атракцион для <br>туристов, там течет своя <br>жизнь</p> 
-        </li>
-      </div>
-      <div class="attractions">
-        <li class="review">НЕБОЛЬШАЯ ПЛОЩАДЬ
-          <P>Все достопримечательности находятся очень близко</P>
-        </li>
-        <li class="review">КРАСИВАЯ ДОРОГА
-          <P>Ехать в Седону из Лас-Вегаса совсем не скучно!</P>
-        </li>
-        <li class="review">МАЛО ТУРИСТОВ
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-        </div>
-        <div class="bridge">
-        <img src="img/bridge.jpg" alt="Скалистый мост" width="800" height="385">
-        <li class="review">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА
-          <p>Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется</p>
-        </li>
-        </div>
-      </ul>
+        <h2 class="main_2">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p class="paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    </section>
+    <section>
+        <ul class="grids">
+          <li class="advantages-big-item">
+            <div class="block2">
+              <h4>НАСТОЯЩИЙ <br>ГОРОДОК</h4>
+              <p>Седона - не атракцион для <br>туристов, там течет своя <br>жизнь</p>
+            </div> 
+            <img src="img/city.jpg" alt="Красивый город в саду" width="800" height="385">
+          </li>
+          <li class="advantages-item">
+            <h4>НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h4>КРАСИВАЯ ДОРОГА</h4>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h4>МАЛО ТУРИСТОВ</h4>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-big-item">
+            <img src="img/bridge.jpg" alt="Скалистый мост" width="800" height="385">
+           <div class="block2">
+            <h4>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h4>
+            <p>Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется</p>
+           </div>
+          </li>
+        </ul>
+    </section>
+    <section>
       <h2 class="main_2">ПРИЕЗЖАЙТЕ В СЕДОНУ ОТДОХНУТЬ В КОМФОРТЕ И УЮТЕ!</h2>
       <p class="paragraph">Опытный персонал и качественное обслуживание!</p>
     </section>
-    <section class="comfort">
-      <ul>
-        <li class="review"><img src="img/home.svg" alt="Нарисованный дом" width="75" height="72">ЖИЛЬЁ
-          <p>Рекомендуем пожить <br>в настоящем мотеле, <br>как в кино!</p>
-        </li>
-        <li class="review"><img src="img/burger.svg" alt="Нарисованный бургер" width="75" height="72">ЕДА
-          <p>Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!</p>
-        </li>
-        <li class="review"><img src="img/gift.svg" alt="Нарисованный бургер" width="75" height="72">СУВЕНИРЫ
-          <p>Не только китайского, <br>но и настоящего местнго <br>производства!</p>
-        </li>
-      </ul>
+    <section>
+        <ul class="comfort1">
+          <li>
+            <img src="img/home.svg" alt="Нарисованный дом" width="75" height="72">
+            <h5>ЖИЛЬЁ</h5>
+            <p>Рекомендуем пожить <br>в настоящем мотеле, <br>как в кино!</p>
+          </li>
+          <li>
+            <img src="img/burger.svg" alt="Нарисованный бургер" width="75" height="72">
+            <h5>ЕДА</h5>
+            <p>Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <img src="img/gift.svg" alt="Подарок" width="75" height="72">
+            <h5>СУВЕНИРЫ</h5>
+            <p>Не только китайского, <br>но и настоящего местнго <br>производства!</p>
+          </li>
+        </ul>
     </section>
+
     <section class="interest">
       <h2 class="main_2">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p class="paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -85,7 +102,8 @@
         <li class="social-list-item"><img src="img/social-vk.svg"></li>
         <li class="socisl-list-item"><img src="img/social-telegram.svg"></li>
         <li class="social-list-item"><img src="img/social-youtube.svg"></li>
-        <li><a href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a></li>
+        <a class="tell" href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a>
+        <img src="img/logo_htmlacademy.svg" alt="Логотип академии ">
       </ul>
     </footer>
     
