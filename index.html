@@ -15,8 +15,8 @@
         <li><a class="link" href="catalog.html">Гостинницы</a></li>
       </ul>
       <ul class="title-link">
-        <li><a href="#"><img src="img/search.svg" alt="Поиск в заголовке"></a></li>
-        <li><a href="#"><img src="img/like.svg" alt="Лайк-сердечко"></a></li>
+        <li><a class="header-li" href="#"><img src="img/search.svg" alt="Поиск в заголовке"></a></li>
+        <li><a class="header-li" href="#"><img src="img/like.svg" alt="Лайк-сердечко"></a></li>
         <li><a class="link link_1" href="#">ХОЧУ СЮДА!</a></li>
       </ul>
     </nav>
@@ -39,7 +39,7 @@
               <h4>НАСТОЯЩИЙ <br>ГОРОДОК</h4>
               <p>Седона - не атракцион для <br>туристов, там течет своя <br>жизнь</p>
             </div> 
-            <img src="img/city.jpg" alt="Красивый город в саду" width="800" height="385">
+            <img class="ad_big" src="img/city.jpg" alt="Красивый город в саду" width="800" height="385">
           </li>
           <li class="advantages-item">
             <h4>НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
@@ -88,23 +88,30 @@
 
     <section class="interest">
       <h2 class="main_2">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-      <p class="paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <p class="paragraph">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
-    <footer class="social">
+    <section>
       <h2 class="main_2">Подпишитесь на рассылку</h2>
         <p class="paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form>
-        <label for="email" class="mail">Ваш e-mail</label>
+        <label>
+          <input type="text" id="info" name="info">Ваш e-mail</label>
         <button class="signature">Подписаться</button>
       </form>
+    </section>
+    <footer class="social">
       <ul class="social-list">
-        <li class="social-list-item"><img src="img/social-vk.svg"></li>
-        <li class="socisl-list-item"><img src="img/social-telegram.svg"></li>
-        <li class="social-list-item"><img src="img/social-youtube.svg"></li>
-        <a class="tell" href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a>
-        <img src="img/logo_htmlacademy.svg" alt="Логотип академии ">
+          <li class="social-list-item"><img src="img/social-vk.svg"></li>
+          <li class="socisl-list-item"><img src="img/social-telegram.svg"></li>
+          <li class="social-list-item"><img src="img/social-youtube.svg"></li>
       </ul>
+      <div>
+          <a class="tell" href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a>
+      </div>
+      <div>
+        <img src="img/logo_htmlacademy.svg" alt="Логотип академии ">
+      </div>
     </footer>
     
 

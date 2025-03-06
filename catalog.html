@@ -6,24 +6,29 @@
     <linK href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <header>
-    <a href="#"><img src="img/logo_header.svg" alt="Логотип Седона" width="138px" height="64px"></a>
+  <header class="header-main">
+    <a href="#"><img class="logotip" src="img/logo_header.svg" alt="Логотип Седона" width="138px" height="64px"></a>
     <nav>
       <ul class="header">
         <li><a class="link" href="index.html">Главная</a></li>
         <li><a class="link" href="#">О Седоне</a></li>
-        <li><a class="link link_2" href="#">Гостинницы</a></li>
+        <li><a class="link link_main" href="#">Гостинницы</a></li>
       </ul>
       <ul class="title-link">
-        <li><a href="#"><img src="img/search.svg" alt="Поиск в заголовке"></a></li>
-        <li><a href="#"><img src="img/like.svg" alt="Лайк-сердечко"></a></li>
+        <li><a class="header-li" href="#"><img src="img/search.svg" alt="Поиск в заголовке"></a></li>
+        <li><a class="header-li" href="#"><img src="img/like.svg" alt="Лайк-сердечко"></a></li>
         <li><a class="link link_1" href="#">ХОЧУ СЮДА!</a></li>
       </ul>
     </nav>
   </header>
-  <body>
+  <body class="header-main">
+    <div class="heading">
+    <img class="main_header_logo" src="img/main_picture.jpg" alt="Горы" width="1200" height="485">
+    <img class="welcome" src="img/vector_main.png" alt="Добро пожаловать">
+    <img class="welcome_2" src="img/vector_podwe.svg" alt="Великолепно">
+    <img class="welcome_3" src="img/vector.svg" alt="Приветствие">
+      </div>
     <section class="filter">
-      <img src="img/main_picture.jpg">
       <h1 class="main_catal">Гостиницы Седоны</h1>
       <p><img src="img/home_2.svg" alt="Маленький дом"></p>
       <h3 class="hotels_catal">Гостиницы</h3>
@@ -43,6 +48,7 @@
           <li>
             <h2>Стоимость:</h2>
             <a class="detailed" href="#">ПРИМЕНИТЬ</a>
+            <a class="detailed" href="#">СБРОСИТЬ</a>
           </li>
         </ul>
     </section>
@@ -56,32 +62,32 @@
            <option>Сначала дешевые</option>
           </select>
         </li>
-        <li>
+        <li class="choice">
             <a href="#"><img src="img/menu_2.svg"></a>
             <a href="#"><img src="img/computer_1.svg"></a>
             <a href="#"><img src="img/view-icon.svg"></a>
           </li>
         </ul>
         <ul class="list-item-catalog">
-            <li><a href="#"><img src="img/hotel-1.jpg"></a>
+            <li class="catalog-new"><a href="#"><img src="img/hotel-1.jpg"></a>
                 <a class="review" href="#"><p>Amara Resort & Spa</p></a>
                 <p>Гостиница От 4000 ₽</p>
                 <a class="detailed" href="#">ПОДРОБНЕЕ</a>
                 <a class="detailed" href="#">В ИЗБРАННОЕ</a>
                 <p class="rating"><img src="img/star.svg">Рейтинг: 8,5</p></li>
-            <li><a href="#"><img src="img/hotel-2.jpg"></a>
+            <li class="catalog-new"><a href="#"><img src="img/hotel-2.jpg"></a>
                 <a class="review" href="#"><p>Villas at Poco Diablo</p></a>
                 <p>Гостиница От 5000 ₽</p>
                 <a class="detailed" href="#">ПОДРОБНЕЕ</a>
                 <a class="detailed" href="#">В ИЗБРАННОМ</a>
                 <p class="rating"><img src="img/star.svg">Рейтинг: 9,2</p></li>
-            <li><a href="#"><img src="img/hotel-3.jpg"></a>
+            <li class="catalog-new"><a href="#"><img src="img/hotel-3.jpg"></a>
                 <a class="review" class="review" href="#"><p>Desert Quail Inn</p></a>
                 <p>Гостиница От 2500 ₽</p>
                 <a class="detailed" href="#">ПОДРОБНЕЕ</a>
                 <a class="detailed" href="#">В ИЗБРАННОЕ</a>
                 <p class="rating"><img src="img/star.svg">Рейтинг: 6,9</p></li>
-            <li class="list-end">
+            <li class="catalog-new">
                 <a href="#"><img src="img/hotel-4.jpg"></a>
                 <a class="review" href="#"><p>GreenTree Inn</p></a>
                 <p>Гостиница От 1500 ₽</p>
@@ -91,22 +97,37 @@
             </li>
         </ul>
     </section>
-    <footer class="social">
-         <h2>Подпишитесь на рассылку</h2>
-         <p class="paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form>
-        <label for="email">Ваш e-mail</label>
-        <button>Подписаться</button>
-      </form>
-      <ul class="social-list">
-        <li>
-          <a class="social-list-item"><img src="img/social-vk.svg"></a>
-          <a class="socisl-list-item"><img src="img/social-telegram.svg"></a>
-          <a class="social-list-item"><img src="img/social-youtube.svg"></a>
-          <a href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a>
-          <img src="img/logo_htmlacademy.svg" alt="Логотип академии ">
-        </li>
+    <section>
+      <ul class="pages">
+        <li><a class="number number1" href="#">1</a></li>
+        <li><a class="number number2" href="#">2</a></li>
+        <li><a class="number number2" href="#">3</a></li>
+        <li><a class="number number2" href="#">4</a></li>
+        <li><a class="number number1"href="#">...</a></li>
+        <li><a class="number number2" href="#">10</a></li>
       </ul>
+    </section>
+    <section>
+          <h2 class="main_2">Подпишитесь на рассылку</h2>
+          <p class="paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form>
+            <label>
+              <input type="text" id="info" name="info">Ваш e-mail</label>
+            <button class="signature">Подписаться</button>
+          </form>
+    </section>
+    <footer class="social">
+      <ul class="social-list">
+          <li class="social-list-item"><img src="img/social-vk.svg"></li>
+          <li class="socisl-list-item"><img src="img/social-telegram.svg"></li>
+          <li class="social-list-item"><img src="img/social-youtube.svg"></li>
+      </ul>
+      <div>
+          <a class="tell" href="tel:+7(812) 812-12-12">+7(812) 812-12-12</a>
+      </div>
+      <div>
+        <img src="img/logo_htmlacademy.svg" alt="Логотип академии ">
+      </div>
     </footer>
   </body>
   </html>
