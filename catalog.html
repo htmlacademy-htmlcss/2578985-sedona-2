@@ -8,35 +8,35 @@
   </head>
   <body class="page_catalog">
     <header class="header_main">
-      <a href="index.html">
+      <a href="index.html" aria-label="Перейти на сайт Академии">
         <img class="logotip" src="img/logo_header.svg" alt="Логотип Седона" width="138" height="64" />
       </a>
       <nav class="navigation">
         <ul class="header">
           <li>
-            <a class="link" href="index.html">Главная</a>
+            <a class="link" href="index.html" aria-label="Перейти на главную страницу сайта">Главная</a>
           </li>
           <li>
-            <a class="link" href="#">О Седоне</a>
+            <a class="link" href="#" aria-label="Информация о Седоне">О Седоне</a>
           </li>
           <li>
-            <a class="link link_main" href="#">Гостиницы</a>
+            <a class="link link_main" href="#" aria-label="Перейти на каталог с гостиницами">Гостиницы</a>
           </li>
         </ul>
         <ul class="title_link">
           <li>
-            <a class="header_li" href="#">
+            <a class="header_li" href="#" aria-label="Поиск гостиниц">
               <img class="zoom" src="img/search.svg" alt="Поиск в заголовке" />
             </a>
           </li>
           <li>
-            <a class="header_li circle" href="#">
+            <a class="header_li circle" href="#" aria-label="Добавленные в избранное гостиницы">
               <img src="img/like.svg" alt="Лайк-сердечко" />
               <span class="title_link_span">12</span>
             </a>
           </li>
           <li>
-            <a class="link link_1" href="#">ХОЧУ СЮДА!</a>
+            <a class="link link_1" href="#" aria-label="Перейти на выбранную гостиницу">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -55,17 +55,17 @@
         <li>
           <h2 class="header_categorii">Инфраструктура:</h2>
           <label class="services">
-            <input type="checkbox" class="checkbox visually_hidden" name="pool" checked />
+            <input type="checkbox" class="checkbox visually_hidden" aria-label="Бассейн нужен или нет" name="pool" checked />
             <span class="checkbox_marck"></span>
             <span class="checkbox_text">Бассейн</span>
           </label>
           <label class="services">
-            <input type="checkbox" class="checkbox visually_hidden" name="parking" checked />
+            <input type="checkbox" class="checkbox visually_hidden" aria-label="Парковна нужна или нет" name="parking" checked />
             <span class="checkbox_marck"></span>
             <span class="checkbox_text">Парковка</span>
           </label>
           <label class="services">
-            <input type="checkbox" class="checkbox visually_hidden" name="wifi" />
+            <input type="checkbox" class="checkbox visually_hidden" aria-label="Беспроводной интернет нужен или нет" name="wifi" />
             <span class="checkbox_marck"></span>
             <span class="checkbox_text">Wi-Fi</span>
           </label>
@@ -73,17 +73,17 @@
         <li>
           <h2 class="header_categorii">Тип Жилья:</h2>
           <label class="services">
-            <input type="radio" class="radio visually_hidden" name="type" checked />
+            <input type="radio" class="radio visually_hidden" aria-label="Выбор гостиницы" name="type" checked />
             <span class="radio_marck"></span>
             <span class="radio_text">Гостиница</span>
           </label>
           <label class="services">
-            <input type="radio" class="radio visually_hidden" name="type" />
+            <input type="radio" class="radio visually_hidden" aria-label="Выбор мотеля" name="type" />
             <span class="radio_marck"></span>
             <span class="radio_text">Мотель</span>
           </label>
           <label class="services">
-            <input type="radio" class="radio visually_hidden" name="type" />
+            <input type="radio" class="radio visually_hidden" aria-label="Выбор аппартаментов" name="type" />
             <span class="radio_marck"></span>
             <span class="radio_text">Апартаменты</span>
           </label>
@@ -92,11 +92,11 @@
           <h2 class="header_categorii">Стоимость, ₽:</h2>
           <div class="prices">
             <div>
-              <input class="prices_input radius_0" type="text" required id="price_from" value="0" name="price_from" />
+              <input class="prices_input radius_0" type="text" required id="price_from" value="0" aria-label="Начальная стоимость жилья" name="price_from" />
               <label for="price_from" class="prices_label input_price_from">от</label>
             </div>
             <div>
-              <input class="prices_input radius_9" type="text" required id="price_to" value="9000" name="price_to" />
+              <input class="prices_input radius_9" type="text" required id="price_to" value="9000" aria-label="Максимальная стоимость жилья" name="price_to" />
               <label for="price_to" class="prices_label input_price_to">до</label>
             </div>
           </div>
@@ -115,7 +115,7 @@
     <section class="hotels">
       <div class="hotels_main">
         <h2 class="main_heading">НАЙДЕНО ГОСТИНИЦ: 38</h2>
-        <select name="price" class="sorting">
+        <select name="price" class="sorting" aria-label="Сортировка жилья по цене">
           <option>Сначала дешевые</option>
           <option>Сначала дорогие</option>
         </select>
@@ -198,13 +198,13 @@
             <a class="detailed_2" href="#">В ИЗБРАННОЕ</a>
           </div>
           <p class="rating">
-            <img src="img/3_stars.svg" alt="Графические звезды" />
+            <img src="img/stars_3.svg" alt="Графические звезды" />
           </p>
           <p class="rating_class">
             <span class="rating_text">РЕЙТИНГ: 6,9</span>
           </p>
         </li>
-        <li class="catalog_new">
+        <li class="catalog_new catalog_new_last">
           <a href="#">
             <img class="hotel_desert" src="img/hotel_4.jpg" alt="Отель Greentree" />
           </a>
@@ -220,7 +220,7 @@
             <a class="detailed_2" href="#">В ИЗБРАННОЕ</a>
           </div>
           <p class="rating">
-            <img src="img/2_stars.svg" alt="Графические звезды" />
+            <img src="img/stars_2.svg" alt="Графические звезды" />
           </p>
           <p class="rating_class">
             <span class="rating_text">РЕЙТИНГ: 5,0</span>
@@ -257,27 +257,27 @@
         <label>
           <input class="input" type="email" placeholder="Ваш e-mail" id="info" name="info" />
         </label>
-        <button class="signature" type="submit">ПОДПИСАТЬСЯ</button>
+        <button class="signature" type="submit" aria-label="Ввести почту и подписаться на рассылку новостей">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
     <footer class="footer footer_catalog">
       <ul class="social_list social_list_catalog">
         <li class="social_list_item">
-          <a href="#">
+          <a href="#" aria-label="Перейти на сайт ВК">
             <svg class="footer_social" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z" fill="currentColor" />
             </svg>
           </a>
         </li>
         <li class="socisl_list_item">
-          <a href="№">
+          <a href="#" aria-label="Перейти на сайт Телеграм">
             <svg class="footer_social" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z" fill="currentColor" />
             </svg>
           </a>
         </li>
         <li class="social_list_item">
-          <a href="#">
+          <a href="#" aria-label="Перейти на сайт Инстаграм">
             <svg class="footer_social" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" fill="currentColor" />
             </svg>
@@ -285,7 +285,7 @@
         </li>
       </ul>
       <div>
-        <a class="tell" href="tel:+78128121212">+7(812) 812-12-12</a>
+        <a class="tell" href="tel:+78128121212" aria-label="Позвонить по номеру телефона">+7(812) 812-12-12</a>
       </div>
       <div>
         <a class="html_academi html_academi_catalog" href="https://htmlacademy.ru/intensive/htmlcss">
