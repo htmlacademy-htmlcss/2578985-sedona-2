@@ -790,6 +790,7 @@ body {
     padding: 35px 70px 70px;
     background-size: cover;
     margin-bottom: -24px;
+    background-color: #73a5c3;
 }
 
 .home {
@@ -989,10 +990,17 @@ body {
     margin-top: -16px;
 }
 
-.vector_galka {
+.vector_g {
     padding-left: 10px;
     padding-right: 10px;
 }
+.form_popap_text {
+    display: none;
+}
+.form_popap_treygolnik:hover + .form_popap_text {
+    display: block;
+}
+
 .input_price_from {
     font-weight: 700;
     font-size: 18px;
