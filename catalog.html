@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
 </head>
 
 <body class="page_catalog">
@@ -49,7 +47,7 @@
     <h1 class="main_catal">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li>
-        <a href="#">
+        <a href="index.html">
           <img class="home jackdaw" src="img/home_2.svg" alt="Маленький дом" />
         </a>
       </li>
@@ -110,10 +108,12 @@
           </div>
         </div>
         <div class="price_range">
-          <button class="price_button price_button_min" type="button"
-            aria-label="Выберите минимальное значение"></button>
-          <button class="price_button price_button_max" type="button"
-            aria-label="Выберите максимальное значение"></button>
+          <button class="price_button price_button_min" type="button">
+            <span class="visually_hidden">Выберите минимальное значение</span>
+          </button>
+          <button class="price_button price_button_max" type="button">
+            <span class="visually_hidden">Выберите максимальное значение</span>
+          </button>
           <div class="price_line"></div>
         </div>
       </li>
@@ -132,17 +132,17 @@
       </select>
       <ul class="choices_list">
         <li class="choice">
-          <a class="choice_link choice_link_activ" href="#">
+          <a class="choice_link choice_link_activ view_choice" href="catalog.html?style=grid" class="view_link">
             <img src="img/menu.svg" alt="Графическое меню" />
           </a>
         </li>
         <li class="choice">
-          <a class="choice_link" href="#">
+          <a class="choice_link" href="catalog.html?style=cards">
             <img src="img/computer.svg" alt="Графический компьютер" />
           </a>
         </li>
         <li class="choice">
-          <a class="choice_link" href="#">
+          <a class="choice_link" href="catalog.html?style=list">
             <img src="img/view_icon.svg" alt="Графический список" />
           </a>
         </li>
@@ -239,7 +239,7 @@
       </li>
     </ul>
   </section>
-  <section>
+  <div>
     <ul class="pages">
       <li>
         <a class="page page_number1 num_1" href="#">1</a>
@@ -260,13 +260,13 @@
         <a class="page page_number2" href="#">10</a>
       </li>
     </ul>
-  </section>
+  </div>
   <section class="mailing_1">
     <h2 class="main_heading">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
     <p class="paragraph"> Только полезная информация и никакого спама, <br /> честное бойскаутское! </p>
     <form class="you_mail" action="https://echo.htmlacademy.ru">
       <label>
-        <input class="input" type="email" placeholder="Ваш e-mail" aria-label="Ввести вашу почту" id="info" name="info" />
+        <input class="input" type="email" required placeholder="Ваш e-mail" aria-label="Ввести вашу почту" id="info" name="info" />
       </label>
       <button class="signature" type="submit"
         aria-label="Ввести почту и подписаться на рассылку новостей">ПОДПИСАТЬСЯ</button>

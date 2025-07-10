@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <linK href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
   </head>
   <body class="page_index">
     <header class="header_main">
@@ -49,11 +49,12 @@
       <p class="paragraph_page">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
     <section>
+      <h2 class="visually_hidden">Достопримечательности нашего города</h2>
       <ul class="grids">
         <li class="advantages_big_item">
           <div class="point_one">
             <h4 class="grids_header">НАСТОЯЩИЙ <br>ГОРОДОК </h4>
-            <p>Седона - не атракцион для <br>туристов, там течет своя <br>жизнь </p>
+            <p>Седона - не аттракцион для <br>туристов, там течет своя <br>жизнь </p>
           </div>
           <img class="ad_big" src="img/city.jpg" alt="Красивый город в саду" width="800" height="385">
         </li>
@@ -69,7 +70,7 @@
           <h4 class="grids_header">МАЛО <br>ТУРИСТОВ </h4>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li class="advantages_big_item">
+        <li class="advantages_big_item advantages_big_item_second">
           <img class="ad_big" src="img/bridge.jpg" alt="Скалистый мост" width="800" height="385">
           <div class="point_one">
             <h4 class="grids_header">ТАМ ЕСТЬ <br>МОСТ ДЬЯВОЛА </h4>
@@ -83,21 +84,19 @@
       <p class="paragraph_main">Опытный персонал и качественное обслуживание!</p>
     </section>
     <section>
+      <h2 class="visually_hidden">Комфорт в Седоне</h2>
       <ul class="comfort">
-        <li class="conditions">
-          <img src="img/home.svg" alt="Нарисованный дом" width="75" height="72">
+        <li class="conditions conditions_home">
           <h5>ЖИЛЬЁ</h5>
           <p>Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино! </p>
         </li>
-        <li class="conditions">
-          <img src="img/burger.svg" alt="Нарисованный бургер" width="75" height="72">
+        <li class="conditions conditions_burger">
           <h5>ЕДА</h5>
           <p>Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь! </p>
         </li>
-        <li class="conditions">
-          <img src="img/gift.svg" alt="Подарок" width="75" height="72">
+        <li class="conditions conditions_gift">
           <h5>СУВЕНИРЫ</h5>
-          <p>Не только китайского, <br>но и настоящего местнго <br>производства! </p>
+          <p>Не только китайского, <br>но и настоящего местного <br>производства! </p>
         </li>
       </ul>
     </section>
@@ -111,7 +110,7 @@
       <p class="paragraph_miling">Только полезная информация и никакого спама, <br>честное бойскаутское! </p>
       <form class="you_mail" action="https://echo.htmlacademy.ru">
         <label>
-          <input class="input" type="email" placeholder="Ваш e-mail" aria-label="Ввести вашу почту" id="info" name="info">
+          <input class="input" type="email" required placeholder="Ваш e-mail" aria-label="Ввести вашу почту" id="info" name="info">
         </label>
         <button class="signature" type="submit" aria-label="Ввести почту и подписаться на рассылку новостей">ПОДПИСАТЬСЯ</button>
       </form>
