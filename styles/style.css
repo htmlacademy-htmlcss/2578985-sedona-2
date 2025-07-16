@@ -128,7 +128,7 @@ body {
 }
 
 .advantages_item {
-	padding: 92px 83px 90px 83px;
+	padding: 92px 83px 95px 83px;
 	gap: 10px;
 	list-style: none;
 	background-color: #83B3D31F;
@@ -139,7 +139,7 @@ body {
 	content: "";
 	display: block;
 	width: 60px;
-	margin: 30px auto 20px;
+	margin: 27px auto 20px;
 	border-bottom: 2px solid #0000004D;
 }
 
@@ -1695,4 +1695,8 @@ body {
 
 .advantages_big_item_second {
 	margin-top: 0;
+}
+
+.footer_logo_index {
+	margin-top: -5px;
 }
