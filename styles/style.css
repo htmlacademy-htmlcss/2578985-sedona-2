@@ -128,18 +128,18 @@ body {
 }
 
 .advantages_item {
-	padding: 92px 83px 90px 83px;
+	padding: 92px 83px 95px 83px;
 	gap: 10px;
 	list-style: none;
 	background-color: #83B3D31F;
 	text-align: center;
 }
 
-.advantages_item h4::after {
+.advantages_item h3::after {
 	content: "";
 	display: block;
 	width: 60px;
-	margin: 30px auto 20px;
+	margin: 27px auto 20px;
 	border-bottom: 2px solid #0000004D;
 }
 
@@ -164,7 +164,7 @@ body {
 	opacity: 0.5;
 }
 
-.point_one h4::after {
+.point_one h3::after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -203,7 +203,7 @@ body {
 	margin-left: -36px;
 }
 
-.conditions h5 {
+.conditions h3 {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -275,8 +275,12 @@ body {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
-	padding: 20px 16px;
+	padding: 20px 0;
 	display: table;
+}
+
+.header_item {
+	padding: 0 16px;
 }
 
 .link:active {
@@ -290,6 +294,16 @@ body {
 
 .header_li {
 	padding: 20px 16px;
+	margin-left: -2px;
+}
+
+.header_li:hover,
+.header_li:focus {
+	opacity: 0.5;
+}
+
+.header_li:active {
+	opacity: 0.25;
 }
 
 .link_1 {
@@ -631,8 +645,30 @@ body {
 	color: #756157;
 }
 
+.tell:active {
+	opacity: 0.5;
+}
+
 .button {
 	text-align: center;
+}
+
+.breadcrumbs_home {
+	background-image: url("../img/home_2.svg");
+	background-size: 12px 12px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-top: 4px;
+}
+
+.breadcrumbs_home:hover,
+.breadcrumbs_home:focus {
+	opacity: 0.5;
+}
+
+.breadcrumbs_home:active {
+	opacity: 0.25;
 }
 
 .choice_link {
@@ -643,14 +679,38 @@ body {
 	height: 48px;
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
+	background-size: 16px 14px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.header_like {
+	background-image: url("../img/like.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center 14px;
+	margin-left: 21px;
+	left: -7px;
+}
+
+.header_search {
+	background-image: url("../img/search.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 2px 29px;
 }
 
 .choice_link:hover {
-	border-color: #68A2CA;
+	border-color: #000000;
 }
 
 .choice_link_activ {
 	border-color: #000000;
+}
+
+.choice_link:focus {
+	border-color: #68A2CA;
+	outline: none;
 }
 
 .deco_menu {
@@ -760,7 +820,7 @@ body {
 	width: 452px;
 	height: 52px;
 	font-size: 18px;
-	padding: 12px 20px 12px 20px;
+	padding: 17px 20px 12px 18px;
 	border-radius: 4px 0 0 4px;
 	background-color: #F2F2F2;
 	border: none;
@@ -787,35 +847,60 @@ body {
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 10px;
-	margin-right: 17px;
+	margin-right: 25px;
 	padding-top: 13px;
+	padding-left: 4px;
 }
 
-.circle img {
-	margin-top: 8px;
+.circle:hover {
+	opacity: 0.5;
 }
 
-.circle::before {
-	content: "";
-	position: absolute;
-	top: -5px;
-	left: 25px;
-	width: 20px;
-	height: 20px;
-	background-color: #7DB54F;
-	border-radius: 50%;
+.circle:active {
+	color: white 30%;
+	opacity: 0.3;
+}
+
+.choice_menu {
+	background-image: url("../img/menu.svg");
+}
+
+.choice_computer {
+	background-image: url("../img/computer.svg");
+}
+
+.choice_list {
+	background-image: url("../img/view_icon.svg");
 }
 
 .title_link_span {
 	position: absolute;
-	color: white;
-	top: 0;
-	right: 10px;
+    color: white;
+    top: 3px;
+    right: -2px;
+    min-width: 20px;
+    height: 20px;
+    background-color: #7DB54F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    left: 8px;
 }
 
 .zoom {
 	margin-top: 8px;
 	margin-right: -7px;
+}
+
+.zoom:hover {
+	opacity: 0.5;
+}
+
+.zoom:active {
+	color: white 30%;
+	opacity: 0.3;
 }
 
 .mailing .main_heading {
@@ -832,9 +917,9 @@ body {
 	width: 1200px;
 	min-height: 412px;
 	background-image: url('../img/filter.jpg');
-	padding: 35px 70px 70px;
+	padding: 35px 70px 40px;
 	background-size: cover;
-	margin-bottom: -24px;
+	margin-bottom: 31px;
 	background-color: #73a5c3;
 }
 
@@ -1173,8 +1258,14 @@ body {
 	background-color: transparent;
 }
 
+
 .sorting:hover {
 	border-color: #68A2CA;
+}
+
+.sorting:focus {
+	border-color: #68A2CA;
+	outline: none;
 }
 
 .choices_list {
@@ -1604,4 +1695,8 @@ body {
 
 .advantages_big_item_second {
 	margin-top: 0;
+}
+
+.footer_logo_index {
+	margin-top: -5px;
 }
